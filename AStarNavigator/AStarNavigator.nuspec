@@ -3,8 +3,8 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <title>$id$</title>
-    <description>Library for calculating routes on a tile-based 2 map.</description>
+    <title>AStar Navigator</title>
+    <description>Portable NuGet library/package for navigating on a tile-based 2-dimensional raster/matrix.</description>
     <projectUrl>https://github.com/WichardRiezebos/astar-navigator</projectUrl>
     <authors>Wichard Riezebos</authors>
   </metadata>
