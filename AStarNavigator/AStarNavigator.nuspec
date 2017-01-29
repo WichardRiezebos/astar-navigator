@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>AStarNavigator</id>
+    <id>$id$</id>
     <version>$version$</version>
-    <title>AStarNavigator</title>
+    <title>$id$</title>
     <description>Library for calculating routes on a tile-based 2 map.</description>
     <projectUrl>https://github.com/WichardRiezebos/astar-navigator</projectUrl>
     <authors>Wichard Riezebos</authors>
