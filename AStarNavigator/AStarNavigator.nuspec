@@ -5,7 +5,10 @@
     <version>$version$</version>
     <title>AStar Navigator</title>
     <description>Portable NuGet library/package for navigating on a tile-based 2-dimensional raster/matrix.</description>
-    <projectUrl>https://github.com/WichardRiezebos/astar-navigator</projectUrl>
     <authors>Wichard Riezebos</authors>
+    <owners>Wichard Riezebos</owners>
+    <projectUrl>https://github.com/WichardRiezebos/astar-navigator</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/WichardRiezebos/astar-navigator/master/icon.png</iconUrl>
+    <tags>astar pathfinder navigator</tags>
   </metadata>
 </package>
