@@ -36,7 +36,8 @@ namespace AStarNavigator
             this.heuristicAlgorithm = heuristicAlgorithm;
         }
 
-        IReadOnlyCollection<Tile> ITileNavigator.Navigate(Tile from, Tile to)
+        /// <inheritdoc />
+        public IReadOnlyCollection<Tile> Navigate(Tile from, Tile to)
         {
             var closed = new List<Tile>();
             var open = new List<Tile>() { from };
