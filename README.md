@@ -1,4 +1,6 @@
 # AStar Navigator [![Build status](https://ci.appveyor.com/api/projects/status/fu2jsiaylryisy5t?svg=true)](https://ci.appveyor.com/project/WichardRiezebos/astar)
+
+[![Join the chat at https://gitter.im/astar-navigator/Lobby](https://badges.gitter.im/astar-navigator/Lobby.svg)](https://gitter.im/astar-navigator/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Portable NuGet library/package for navigating on a tile-based 2-dimensional raster/matrix.
 
 ## Installation
