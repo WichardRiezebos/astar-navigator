@@ -3,11 +3,9 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
+    <title>AStarNavigator</title>
     <description>Library for calculating routes on a tile-based 2 map.</description>
-    <projectUrl>https://github.com/WichardRiezebos/astar</projectUrl>
+    <projectUrl>https://github.com/WichardRiezebos/astar-navigator</projectUrl>
     <authors>Wichard Riezebos</authors>
   </metadata>
-  <files>
-    <file src="bin\Release\**\AStarNavigator.dll" target="content" />
-  </files>
 </package>
