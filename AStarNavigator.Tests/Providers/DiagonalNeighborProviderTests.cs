@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace AStar.Providers
+namespace AStarNavigator.Providers
 {
     [TestFixture]
     public class DiagonalNeighborProviderTests

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace AStar.Providers
+namespace AStarNavigator.Providers
 {
     public interface INeighborProvider
     {

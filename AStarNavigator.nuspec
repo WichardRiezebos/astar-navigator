@@ -7,4 +7,7 @@
     <projectUrl>https://github.com/WichardRiezebos/astar</projectUrl>
     <authors>Wichard Riezebos</authors>
   </metadata>
+  <files>
+    <file src="bin\Release\**\AStarNavigator.dll" target="content" />
+  </files>
 </package>

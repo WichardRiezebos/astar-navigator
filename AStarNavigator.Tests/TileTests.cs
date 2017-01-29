@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace AStar
+namespace AStarNavigator
 {
     [TestFixture]
     public class TileTests

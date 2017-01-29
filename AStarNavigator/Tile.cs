@@ -1,4 +1,4 @@
-﻿namespace AStar
+﻿namespace AStarNavigator
 {
     public struct Tile
     {

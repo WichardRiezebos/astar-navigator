@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AStar.Algorithms
+namespace AStarNavigator.Algorithms
 {
     public class ManhattanHeuristicAlgorithm : IDistanceAlgorithm
     {

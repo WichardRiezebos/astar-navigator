@@ -1,17 +1,17 @@
-﻿using AStar.Algorithms;
-using AStar.Providers;
+﻿using AStarNavigator.Algorithms;
+using AStarNavigator.Providers;
 using Moq;
 using NUnit.Framework;
 
-namespace AStar
+namespace AStarNavigator
 {
     [TestFixture]
-    public class TilePathfinderTests
+    public class TileNavigatorTests
     {
         [Test]
-        public void FindRoute_WhenStraightLine_ReturnsExpectedValues()
+        public void Navigate_WhenStraightLine_ReturnsExpectedValues()
         {
-            var sut = new TilePathfinder(
+            var sut = new TileNavigator(
                 new EmptyBlockedProvider(),
                 new DiagonalNeighborProvider(),
                 new PythagorasAlgorithm(),
@@ -21,7 +21,7 @@ namespace AStar
             var from = new Tile(0, 0);
             var to = new Tile(0, 2);
 
-            var result = sut.FindRoute(from, to);
+            var result = sut.Navigate(from, to);
 
             var expected = new[]
             {
@@ -33,9 +33,9 @@ namespace AStar
         }
 
         [Test]
-        public void FindRoute_WhenDiagonal_ReturnsExpectedValues()
+        public void Navigate_WhenDiagonal_ReturnsExpectedValues()
         {
-            var sut = new TilePathfinder(
+            var sut = new TileNavigator(
                 new EmptyBlockedProvider(),
                 new DiagonalNeighborProvider(),
                 new PythagorasAlgorithm(),
@@ -45,7 +45,7 @@ namespace AStar
             var from = new Tile(0, 0);
             var to = new Tile(2, 2);
 
-            var result = sut.FindRoute(from, to);
+            var result = sut.Navigate(from, to);
 
             var expected = new[]
             {
@@ -57,7 +57,7 @@ namespace AStar
         }
 
         [Test]
-        public void FindRoute_WhenRouteIsBlocked_ReturnsNull()
+        public void Navigate_WhenRouteIsBlocked_ReturnsNull()
         {
             var blockedMock = new Mock<IBlockedProvider>();
 
@@ -65,7 +65,7 @@ namespace AStar
                 .Setup(m => m.IsBlocked(It.IsAny<Tile>()))
                 .Returns(true);
 
-            var sut = new TilePathfinder(
+            var sut = new TileNavigator(
                 blockedMock.Object,
                 new DiagonalNeighborProvider(),
                 new PythagorasAlgorithm(),
@@ -75,7 +75,7 @@ namespace AStar
             var from = new Tile(0, 0);
             var to = new Tile(2, 2);
 
-            var result = sut.FindRoute(from, to);
+            var result = sut.Navigate(from, to);
 
             Assert.That(result, Is.EqualTo(null));
         }

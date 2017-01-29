@@ -1,4 +1,4 @@
-﻿namespace AStar.Providers
+﻿namespace AStarNavigator.Providers
 {
     public interface IBlockedProvider
     {

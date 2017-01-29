@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace AStar.Algorithms
+namespace AStarNavigator.Algorithms
 {
     [TestFixture]
     public class PythagorasAlgorithmTests

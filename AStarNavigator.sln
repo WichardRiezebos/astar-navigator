@@ -3,12 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar", "AStar\AStar.csproj", "{94738466-A026-444D-B318-24A78723FEC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStarNavigator", "AStar\AStarNavigator.csproj", "{94738466-A026-444D-B318-24A78723FEC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStar.Tests", "AStar.Tests\AStar.Tests.csproj", "{90CC2AC1-BA90-4EFB-9357-6EF67E39204C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AStarNavigator.Tests", "AStar.Tests\AStarNavigator.Tests.csproj", "{90CC2AC1-BA90-4EFB-9357-6EF67E39204C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BD0C25A2-5540-4052-8FA3-363871EA078B}"
 	ProjectSection(SolutionItems) = preProject
+		AStarNavigator.nuspec = AStarNavigator.nuspec
 		README.md = README.md
 	EndProjectSection
 EndProject

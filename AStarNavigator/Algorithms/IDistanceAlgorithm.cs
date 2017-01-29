@@ -1,4 +1,4 @@
-﻿namespace AStar.Algorithms
+﻿namespace AStarNavigator.Algorithms
 {
     public interface IDistanceAlgorithm
     {

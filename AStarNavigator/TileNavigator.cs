@@ -1,11 +1,11 @@
-﻿using AStar.Algorithms;
-using AStar.Providers;
+﻿using AStarNavigator.Algorithms;
+using AStarNavigator.Providers;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AStar
+namespace AStarNavigator
 {
-    public class TilePathfinder
+    public class TileNavigator : ITileNavigator
     {
         private readonly IBlockedProvider blockedProvider;
         private readonly INeighborProvider neighborProvider;
@@ -13,7 +13,7 @@ namespace AStar
         private readonly IDistanceAlgorithm distanceAlgorithm;
         private readonly IDistanceAlgorithm heuristicAlgorithm;
 
-        public TilePathfinder(
+        public TileNavigator(
             IBlockedProvider blockedProvider,
             INeighborProvider neighborProvider,
             IDistanceAlgorithm distanceAlgorithm,
@@ -26,7 +26,7 @@ namespace AStar
             this.heuristicAlgorithm = heuristicAlgorithm;
         }
 
-        public IReadOnlyCollection<Tile> FindRoute(Tile from, Tile to)
+        public IReadOnlyCollection<Tile> Navigate(Tile from, Tile to)
         {
             var closed = new List<Tile>();
             var open = new List<Tile>() { from };
