@@ -63,7 +63,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AStar\AStarNavigator.csproj">
+    <ProjectReference Include="..\AStarNavigator\AStarNavigator.csproj">
       <Project>{94738466-a026-444d-b318-24a78723fec0}</Project>
       <Name>AStarNavigator</Name>
     </ProjectReference>
