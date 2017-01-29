@@ -5,6 +5,9 @@ using System.Linq;
 
 namespace AStarNavigator
 {
+    /// <summary>
+    /// Represents a navigator which calculates routes for 2-dimensional tile-based matrix.
+    /// </summary>
     public class TileNavigator : ITileNavigator
     {
         private readonly IBlockedProvider blockedProvider;
@@ -13,6 +16,13 @@ namespace AStarNavigator
         private readonly IDistanceAlgorithm distanceAlgorithm;
         private readonly IDistanceAlgorithm heuristicAlgorithm;
 
+        /// <summary>
+        /// Inisializes a new instance of the <see cref="TileNavigator"/> class.
+        /// </summary>
+        /// <param name="blockedProvider">The provider for blocked tiles.</param>
+        /// <param name="neighborProvider">The provider for neighbor resolving.</param>
+        /// <param name="distanceAlgorithm">The algorithm for distance calculation.</param>
+        /// <param name="heuristicAlgorithm">The algorithm for heuristic calculation.</param>
         public TileNavigator(
             IBlockedProvider blockedProvider,
             INeighborProvider neighborProvider,
@@ -26,7 +36,7 @@ namespace AStarNavigator
             this.heuristicAlgorithm = heuristicAlgorithm;
         }
 
-        public IReadOnlyCollection<Tile> Navigate(Tile from, Tile to)
+        IReadOnlyCollection<Tile> ITileNavigator.Navigate(Tile from, Tile to)
         {
             var closed = new List<Tile>();
             var open = new List<Tile>() { from };
