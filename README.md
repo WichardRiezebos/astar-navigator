@@ -1,11 +1,12 @@
 # AStar Navigator 
+
 Portable NuGet library/package for navigating on a tile-based 2-dimensional raster/matrix.
 
 |||
 |-|-|
 |**Build**|[![Build](https://ci.appveyor.com/api/projects/status/fu2jsiaylryisy5t?svg=true)](https://ci.appveyor.com/project/WichardRiezebos/astar) |
 |**NuGet**|[![NuGet](https://buildstats.info/nuget/AStarNavigator)](https://www.nuget.org/packages/AStarNavigator/) |
-|**Gitter**|[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/astar-navigator)
+|**Gitter**|[![Join the chat at https://gitter.im/astar-navigator/Lobby](https://badges.gitter.im/astar-navigator/Lobby.svg)](https://gitter.im/astar-navigator/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) |
 ## Installation
 
 Install the NuGet package using the command below,
