@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <description>Library for calculating routes on a tile-based 2 map.</description>
+    <projectUrl>https://github.com/WichardRiezebos/astar</projectUrl>
+    <authors>Wichard Riezebos</authors>
+  </metadata>
+</package>
