@@ -26,7 +26,7 @@ namespace AStarNavigator
             this.heuristicAlgorithm = heuristicAlgorithm;
         }
 
-        public IReadOnlyCollection<Tile> Navigate(Tile from, Tile to)
+        public IEnumerable<Tile> Navigate(Tile from, Tile to)
         {
             var closed = new List<Tile>();
             var open = new List<Tile>() { from };
@@ -81,8 +81,8 @@ namespace AStarNavigator
             return null;
         }
 
-        private IReadOnlyCollection<Tile> ReconstructPath(
-            IReadOnlyDictionary<Tile, Tile> path,
+        private IEnumerable<Tile> ReconstructPath(
+            IDictionary<Tile, Tile> path,
             Tile current)
         {
             List<Tile> totalPath = new List<Tile>() { current };

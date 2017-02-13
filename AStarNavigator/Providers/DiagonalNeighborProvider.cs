@@ -9,7 +9,7 @@ namespace AStarNavigator.Providers
             { 0, -1 }, { 1, 0 }, { 0, 1 }, { -1, 0 }, { -1, -1 }, { 1, -1 }, { 1, 1 }, { -1, 1 }
         };
 
-        public IReadOnlyCollection<Tile> GetNeighbors(Tile tile)
+        public IEnumerable<Tile> GetNeighbors(Tile tile)
         {
             var result = new List<Tile>();
 

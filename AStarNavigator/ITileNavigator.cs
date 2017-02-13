@@ -4,6 +4,6 @@ namespace AStarNavigator
 {
     public interface ITileNavigator
     {
-        IReadOnlyCollection<Tile> Navigate(Tile from, Tile to);
+        IEnumerable<Tile> Navigate(Tile from, Tile to);
     }
 }

@@ -4,6 +4,6 @@ namespace AStarNavigator.Providers
 {
     public interface INeighborProvider
     {
-        IReadOnlyCollection<Tile> GetNeighbors(Tile tile);
+        IEnumerable<Tile> GetNeighbors(Tile tile);
     }
 }
